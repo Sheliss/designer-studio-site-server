@@ -1,0 +1,28 @@
+{
+  "name": "designer-studio-server",
+  "version": "1.0.0",
+  "description": "\"Server for designer studio site\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sheliss/designer-studio-site-server.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "mahouSheliss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sheliss/designer-studio-site-server/issues"
+  },
+  "homepage": "https://github.com/Sheliss/designer-studio-site-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
