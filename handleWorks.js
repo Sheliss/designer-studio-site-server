@@ -12,6 +12,7 @@ const getWorksList = (req, res) => {
 
         tempArray.push(tempObj);
     }
+
     res.send(tempArray);
 }
 
