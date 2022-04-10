@@ -26,15 +26,14 @@ const getList = (req, res) => {
     const works = worksList.getWorkList();
     let sendList = [];
 
-    sendList = works.map(obj => {
+    sendList = works.map(obj, i => {
         const temp = {
-            id: obj.name,
+            id: i,
             img: obj.img
         }
 
         return temp
     })
-
     res.json(sendList);
 }
 
