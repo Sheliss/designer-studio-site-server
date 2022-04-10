@@ -31,6 +31,8 @@ const getList = (req, res) => {
             id: obj.name,
             img: obj.img
         }
+
+        return temp
     })
 
     res.json(sendList);
