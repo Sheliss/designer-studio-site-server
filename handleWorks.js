@@ -22,6 +22,20 @@ const getAllWorks = (req, res) => {
     res.send(works);
 }
 
+const getList = (req, res) => {
+    const works = worksList.getWorkList();
+    let sendList = [];
+
+    sendList = works.map(obj => {
+        const temp = {
+            id: obj.name,
+            img: obj.img
+        }
+    })
+
+    res.json(sendList);
+}
+
 const nextWork = (key, obj) => {
     let keys = Object.keys(obj);
     let next = keys[(keys.indexOf(key) + 1) % keys.length];
@@ -56,5 +70,6 @@ const getSingleWork = (req, res) => {
 module.exports = {
     getWorksList,
     getAllWorks,
-    getSingleWork
+    getSingleWork,
+    getList
 }
