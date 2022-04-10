@@ -27,5 +27,6 @@ app.get('/', (req, res) => {
 app.get('/works-list', handleWorks.getWorksList);
 app.get('/works-all', handleWorks.getAllWorks);
 app.get('/work', handleWorks.getSingleWork);
+app.get('/list', handleWorks.getList);
 
 app.use(express.static(__dirname  + '/img'));
